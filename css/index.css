@@ -1,3 +1,358 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/*Get rid of css browser style*/
+	/* http://meyerweb.com/eric/tools/css/reset/
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+	@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+	@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
 
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed,
+	figure, figcaption, footer, header, hgroup,
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure,
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
 
+	/* Set every element's box-sizing to border-box */
+	* {
+	    box-sizing: border-box;
+	}
+
+	html, body {
+	    height: 100%;
+	    font-family: 'Titillium Web', sans-serif;
+	}
+
+	h1, h2, h3, h4, h5 {
+	    /*font-family: 'Bangers', cursive;*/
+	    font-family: 'Saira Stencil One', cursive;
+	    letter-spacing: 1px;
+	    margin-bottom: 15px;
+			/*border: 2px solid red;*/
+	}
+
+	/* Your code starts here! */
+
+/*Universial CSS*/
+	body{
+		width: 880px;
+		margin: 0 auto;
+	}
+	p{
+		font-family: 'Quicksand', sans-serif;
+	}
+	nav{
+		display: flex;
+		margin-top: 20px;
+	}
+	.nav_item{
+		background: white;
+		color: #c2c2c2;
+		margin: 10px;
+		padding: 5px 15px;
+		text-decoration: none;
+	}
+	.nav_item:hover{
+		opacity: 0.8;
+	}
+	.logo{
+		margin-top: 10px;
+		
+	}
+
+	.firstflex{
+		display: flex;
+	}
+
+	.title{
+		text-align: center;
+		font-size: 70px;
+		margin-top: 120px;
+		margin-left: 60px;
+	}
+	.circle{
+		margin-top: 50px;
+	}
+	.start{
+		background: white;
+		color: black;
+		border: 1px solid black;
+		margin: 10px;
+		padding: 5px 40px;
+		text-decoration: none;
+		margin-left: 180px;
+		position: absolute;
+		top: 400px;
+	}
+	.start:hover{
+		opacity: 0.8;
+	}
+
+	.secondflex{
+		display: flex;
+	}
+
+	.sectionone{
+		margin-top: 30px;
+		width: 48.5%;
+		height: 100px;
+		margin-bottom: 30px;
+	}
+	#second{
+		margin-left: 20px;
+	}
+
+	.thirdflex{
+		display: flex;
+	}
+	.sectiontwo{
+		
+		margin-top: 30px;
+		width: 33%;
+		height: 100px;
+		margin-bottom: 30px;
+	}
+	.sectionthree{
+		margin-top: 30px;
+	}
+	.copyright{
+		text-align:center;
+		font-size: 13px;
+	}
+	.logoTablet{
+		display: none;
+	}
+
+/* Services*/
+
+	.headerimg{
+		margin-top: 25px;
+	}
+
+	.services{
+		font-size: 30px;
+		margin-top:25px;
+	}
+
+	.sections{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.sectionName{
+		font-size: 20px;
+	}
+	.item{
+		border: 1px solid black;
+		padding: 20px;
+		width: 48%;
+		margin: 20px 0px;
+	}
+
+	.buttons{
+		border: 1px solid black;
+		text-decoration: none;
+		color: black;
+		padding: 5px 40px;
+		border-radius: 5px;
+		font-size: 13px;
+	}
+
+	.thickerBreak{
+		background-color: black;
+	    color: black;
+	    border: solid 1px black;
+	    height: 1px;
+	    width: 100%;
+	}
+	.services-info-img{
+		margin-left: 50px;
+	}
+
+	.list{
+		font-family: 'Quicksand', sans-serif;
+		margin-top: 10px;
+	}
+
+/*Media Querey*/
+	@media (max-width: 800px){
+		html{
+		overflow-y: none;
+		}
+		.circle{
+			display: none;
+		}
+		.logoTablet{
+			display: block;
+			margin-left: 40%;
+			margin-top: 30px;
+		}
+		.logo{
+			margin-left: 50%;
+			display: none;
+		}
+		.title{
+			
+			margin-left: auto;
+			margin-right: auto;
+			width:100%;
+			margin-top: 30px;
+			margin-bottom: 110px;
+		}
+
+		.start{
+			display: block;
+			margin-left: 37%;
+			top: 370px;
+		}
+
+		.first.line{
+			margin-top: 40px;
+		}
+		
+		.middle-img{
+			margin-top:40px; 
+			width: 100%;
+			margin-left: 5px; 
+			margin-right:5px;
+		}
+		
+		
+		.sectionone{
+			margin-top: 30px;
+			width: 48.5%;
+			height: 100px;
+			margin-bottom: 30px;
+		}
+
+		.sectiontwo{
+			margin-top: 30px;
+			width: 33%;
+			height: 100px;
+			margin-bottom: 100px;
+		}
+
+		#middleSection{
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		body{
+			width: 97%;
+		}
+		nav{
+			justify-content: center;
+			justify-content: space-between;
+		}
+	}
+
+	@media (max-width: 500px){
+		body{
+			width: 94%;
+			
+		}
+		nav{
+			flex-wrap: wrap;
+		}
+		.nav_item{
+			border-top:  1px solid black;
+			padding: 20px;
+			width: 100%;
+			margin:0px;
+			text-align: center;
+		}
+		#lastNav{
+			border-bottom: 1px solid black;
+		}
+		.title{
+			font-size: 13vw;
+		}
+		.logoTablet{
+			display: block;
+			margin-left: 20%;
+			margin-top: 30px;
+		}
+		.start{
+			top: 650px;
+			margin-left: 30%;
+			font-size: 4vw;
+			margin-top:
+			  
+		}
+		.secondflex{
+			flex-wrap: wrap;
+		}
+		.sectionone{
+			width: 100%;
+		}
+		#second{
+			margin: 0px;
+			margin-bottom: 30px;
+		}
+		.thirdflex{
+			flex-wrap: wrap;
+		}
+		.sectiontwo{
+			display: block;
+			width: 100%;
+			margin: 20px 0px;
+			}
+		#middleSection{
+			margin: 0px;
+		}
+		#lastSection{
+			margin-bottom: 0px;
+
+		}
+	}
+
+	@media (max-width: 300px){
+		.sectionone, .sectiontwo{
+			margin-bottom: 100px;
+		}
+		#lastSection{
+			margin-top: 100px;
+
+		}
+		.start{
+			top: 570px;
+			margin-left: 20%;
+		}
+	}
